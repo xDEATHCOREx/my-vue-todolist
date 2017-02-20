@@ -36,7 +36,11 @@ module.exports = {
             }
 		]
 	},
-
+	devServer : {
+		historyApiFallback : true,
+		noInfo : true
+	},
+	devtool : '#eval-source-map',
 //eval-source-map	每个module会通过eval()来执行，并且生成一个DataUrl形式的SourceMap.
 //cheap-module-source-map	生成一个没有列信息（column-mappings）的SourceMaps文件，同时 loader 的 sourcemap 也被简化为只包含对应行的。
 }
