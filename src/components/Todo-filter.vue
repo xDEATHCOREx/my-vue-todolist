@@ -1,9 +1,10 @@
 <template> 
 	<div class="filter">
+		<el-button-group>
 		<el-button @click="setFilter('all')">All</el-button>
 		<el-button @click="setFilter('todo')">Todo</el-button>
 		<el-button @click="setFilter('completed')">Completed</el-button>
-
+		</el-button-group>
 	</div>
 </template>
 <script type="text/javascript">

@@ -1,12 +1,13 @@
 <template>
-<div>
+<div class="block">
 	<ul id="todoList">
 		<todo-item
 		 v-for="(todo,index) in filteredList" 
 		 :todos="todos"
 		 :todo="todo" 
-		 :index="index"></todo-item>
-		<li v-if="">All things done!!</li>
+		 :filter="filter"
+		 :index="index">
+		 </todo-item>	
 	</ul>
 </div>
 </template>
@@ -41,5 +42,7 @@ import TodoItem from './Todo-item.vue'
 	}
 </script>
 <style type="text/css">
-	
+	#todoList{
+		padding: 0;
+	}
 </style>
